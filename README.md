@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Fitness Club
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Fitness Club** is a web application that helps users explore a variety of exercises using data fetched from the ExerciseDB API. Users can search for exercises, filter them based on body parts, and get detailed instructions on how to perform each exercise.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search Exercises**: Users can search for exercises by name or keyword.
+- **Sort by Body Part**: Exercises can be sorted by specific body parts such as arms, legs, chest, etc.
+- **Exercise Instructions**: For each exercise, detailed instructions on how to perform the exercise are provided.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **API**: ExerciseDB from RapidAPI
+- **Styling**: CSS/Material-UI
+- **Environment Variables**: `.env` file for storing API keys.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
 
-### `npm test`
+Follow these steps to get the Fitness Club app running on your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Ajit-2111/Fitness-club.git
+   cd fitness-club
+   ```
 
-### `npm run build`
+2. **Install dependencies**:
+   Make sure you have `npm` or `yarn` installed. Run the following command:
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Set up environment variables**:
+   You need to create a `.env` file in the root of your project to store the API key for ExerciseDB from RapidAPI.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Create a `.env` file:
+   ```bash
+   touch .env
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Inside the `.env` file, add your API key:
+   ```bash
+   REACT_APP_RAPID_API_KEY=your_rapidapi_key_here
+   ```
 
-### `npm run eject`
+4. **Run the app**:
+   Start the development server:
+   ```bash
+   npm start
+   ```
+   or
+   ```bash
+   yarn start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Open the app**:
+   Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Search for Exercises**:
+   - Use the search bar to find exercises by entering a keyword (e.g., "push-up", "squat").
+   
+2. **Sort by Body Parts**:
+   - Click on the body part filter to view exercises targeting specific muscle groups like arms, legs, back, etc.
+   
+3. **View Exercise Details**:
+   - After selecting an exercise, you’ll be able to view detailed instructions and tips on how to perform the exercise correctly.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API Integration
 
-## Learn More
+This app uses the [ExerciseDB API](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb) from RapidAPI to fetch exercise data such as:
+- Exercise names
+- Body parts involved
+- Equipment required
+- Detailed instructions for performing each exercise
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The API key for ExerciseDB is stored securely in the `.env` file. Make sure to:
+- Add the `.env` file to your `.gitignore` to prevent accidental commits of sensitive information.
 
-### Code Splitting
+Example `.env` setup:
+```env
+REACT_APP_RAPID_API_KEY=your_rapidapi_key_here
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Dependencies
 
-### Analyzing the Bundle Size
+- **React.js**: A JavaScript library for building user interfaces.
+- **Material-UI**: For component-based styling and UI elements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+If you'd like to contribute, feel free to submit a pull request! For major changes, please open an issue first to discuss what you would like to change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
